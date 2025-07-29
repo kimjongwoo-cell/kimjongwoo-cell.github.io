@@ -11,7 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "publications by categories in reversed chronological order. written manually instead of jekyll-scholar.",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "Publications by categories in reverse chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
