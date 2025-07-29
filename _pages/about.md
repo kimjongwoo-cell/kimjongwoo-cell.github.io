@@ -7,9 +7,8 @@ subtitle: Ph.D. student in Multimodal Language Model
 profile:
   align: right
   image: me.jpg
-  image_circular: True # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
-    <p>291 Daehak-ro, Yuseong-gu</p>
     <p>Daejeon, Republic of Korea, 34141</p>
     <p>Email: <a href="mailto:gsds4885@kaist.ac.kr">gsds4885@kaist.ac.kr</a></p>
 
