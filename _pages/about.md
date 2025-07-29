@@ -27,8 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello, I’m Jongwoo Kim, a Ph.D. student in the Department of Industrial and Systems Engineering at KAIST, advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist). I’m currently engaged in research activities alongside my great colleagues at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My research focuses on building practical AI systems for real-world applications, particularly in education, healthcare, and recommendation. Recently, I’ve become especially interested in foundation models, exploring how Graph Language Models (GLMs) and Vision-Language Models (VLMs) can be integrated with diverse modalities to improve multimodal reasoning and understanding.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
