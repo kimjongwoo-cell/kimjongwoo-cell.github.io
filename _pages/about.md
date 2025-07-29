@@ -6,7 +6,7 @@ subtitle: Ph.D. student in Multimodal Language Model
 
 profile:
   align: right
-  image: me.png
+  image: me.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>555 your office number</p>
@@ -26,6 +26,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
 
 Hello, I’m Jongwoo Kim, a Ph.D. student in the Department of Industrial and Systems Engineering at KAIST, advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist). I’m currently engaged in research activities alongside my great colleagues at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).
 
