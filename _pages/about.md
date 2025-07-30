@@ -11,10 +11,10 @@ profile:
     <p>Daejeon, Republic of Korea, 34141</p>
     <p>Email: <a href="mailto:gsds4885@kaist.ac.kr">gsds4885@kaist.ac.kr</a></p>
 
-news: true  # includes a list of news items
-sections: true # For work experience & Education
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: true
+sections: true
+selected_papers: true
+social: true
 ---
 
 Hello, I’m Jongwoo Kim, a Ph.D. student in the Department of Industrial and Systems Engineering at KAIST, advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist). I’m currently engaged in research activities alongside my great colleagues at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).
