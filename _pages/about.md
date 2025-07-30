@@ -6,7 +6,7 @@ subtitle: Ph.D. student in Multimodal Language Model
 
 profile:
   align: right
-  image: me.jpg
+  image: me.png
   image_circular: true
   more_info: >
     <p>Daejeon, Republic of Korea, 34141</p>
