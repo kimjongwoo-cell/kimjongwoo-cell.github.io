@@ -11,10 +11,8 @@ profile:
     <p>Daejeon, Republic of Korea, 34141</p>
     <p>Email: <a href="mailto:gsds4885@kaist.ac.kr">gsds4885@kaist.ac.kr</a></p>
     
-announcements:
-  enabled: true
-  scrollable: true
-  limit: 5
+
+  
 news: true
 sections: true
 selected_papers: false  
