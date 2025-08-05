@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: All the publications that I have done or collaborated with. (†:Equal contribution)
 nav: true
 nav_order: 2
