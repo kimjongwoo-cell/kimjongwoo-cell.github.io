@@ -23,15 +23,15 @@ author:
   pronouns         : "he/him"
   bio              : "AI researcher at KAIST, focusing on machine learning, multimodal models, and generative AI."
   location         : "KAIST, Daejeon, South Korea"
-  employer         : "KAIST AI Graduate School"
+  employer         : "KAIST Industrial & Systems Engineering"
   uri              : "https://kimjongwoo-cell.github.io"
-  email            : "kimjongwoo@kaist.ac.kr"
+  email            : "gsds4885@kaist.ac.kr"
 
   # Academic websites
   academia         : 
-  arxiv            : "https://arxiv.org/search/?query=jongwoo+kim&searchtype=author"
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"  # 바꿀 수 있으면 본인 Scholar ID로
-  orcid            : "https://orcid.org/0000-0002-0000-0000" # 있으면 수정
+  arxiv            :
+  googlescholar    : "https://scholar.google.com/citations?user=liLmE2oAAAAJ&hl=ko"  # 바꿀 수 있으면 본인 Scholar ID로
+  orcid            : 
   pubmed           : 
   researchgate     : 
   scopus           : 
@@ -42,9 +42,9 @@ author:
   stackoverflow    : 
 
   # Social media
-  linkedin         : "jongwoo-kim"
+  linkedin         : "www.linkedin.com/in/jongwoo-kim-323406236"
   bluesky          : 
-  twitter          : "kimjongwoo_cell"
+  twitter          : 
   medium           : 
   youtube          : 
   zhihu            : 
