@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Jongwoo Kim | Ph.D. Student at KAIST"
+title: "I am Jongwoo Kim"
 author_profile: true
 redirect_from: 
   - /about/
