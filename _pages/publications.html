@@ -16,14 +16,16 @@ author_profile: true
     border-bottom: 1px solid #e0e0e0;
   }
 
-  /* 썸네일 */
-  .pub-thumb {
-    width: 220px;
-    height: 120px;
-    border-radius: 10px;
-    object-fit: cover;
-    background-color: #f3f3f3;
-  }
+.pub-thumb {
+  width: 260px;          /* 이미지 가로 길이 — 모든 이미지 동일 */
+  height: 160px;         /* 세로 길이 — 자동 맞춤 방지 */
+  object-fit: cover;     /* 비율 유지하면서 꽉 채움 */
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-color: #f3f3f3;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
 
   .pub-content { flex: 1; }
 
