@@ -17,14 +17,17 @@ author_profile: true
   }
 
 .pub-thumb {
-  width: 260px;          /* 이미지 가로 길이 — 모든 이미지 동일 */
-  height: 160px;         /* 세로 길이 — 자동 맞춤 방지 */
-  object-fit: cover;     /* 비율 유지하면서 꽉 채움 */
+  width: 260px;              /* 고정 가로 */
+  height: 160px;             /* 고정 세로 */
+  object-fit: contain;       /* 전체 이미지 표시 (자르지 않음) */
   border-radius: 10px;
   flex-shrink: 0;
-  background-color: #f3f3f3;
-  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  background-color: #fafafa; /* 배경 여백 색상 */
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  padding: 4px;              /* 여백 살짝 줘서 깨끗하게 */
 }
+
 
 
   .pub-content { flex: 1; }
