@@ -6,16 +6,17 @@ author_profile: true
 ---
 
 <style>
+  /* 메인 구조 */
   .pub-entry {
     display: flex;
     align-items: flex-start;
-    gap: 18px;
-    margin-bottom: 30px;
+    gap: 20px;
+    margin-bottom: 28px;
     padding-bottom: 16px;
     border-bottom: 1px solid #e0e0e0;
   }
 
-  /* 썸네일 크기 확대 */
+  /* 썸네일 */
   .pub-thumb {
     width: 220px;
     height: 120px;
@@ -24,10 +25,9 @@ author_profile: true
     background-color: #f3f3f3;
   }
 
-  .pub-content {
-    flex: 1;
-  }
+  .pub-content { flex: 1; }
 
+  /* 라벨 */
   .label {
     display: inline-block;
     padding: 3px 8px;
@@ -38,7 +38,7 @@ author_profile: true
     color: white;
   }
 
-  /* 학회별 색상 */
+  /* 학회 색상 */
   .neurips { background-color: #ef6c00; }
   .emnlp { background-color: #388e3c; }
   .naacl { background-color: #00796b; }
@@ -51,7 +51,7 @@ author_profile: true
   .tfsc { background-color: #424242; }
   .underreview { background-color: #9e9e9e; }
 
-  /* 도메인별 색상 */
+  /* 도메인 */
   .nlp { background-color: #8e24aa; }
   .vision { background-color: #1565c0; }
   .graph { background-color: #2e7d32; }
@@ -59,7 +59,7 @@ author_profile: true
   .multimodal { background-color: #3949ab; }
   .recommendation { background-color: #d81b60; }
 
-  /* 제목 조금 축소 */
+  /* 제목 / 정보 */
   .pub-title {
     font-weight: 700;
     font-size: 0.95em;
@@ -70,15 +70,16 @@ author_profile: true
   .pub-meta {
     font-size: 0.9em;
     color: #444;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
   }
 
   .pub-venue {
     font-style: italic;
-    font-size: 0.9em;
+    font-size: 0.88em;
     color: #555;
   }
 
+  /* 섹션 / 연도 */
   .section-divider {
     border-top: 2px solid #ccc;
     margin-top: 40px;
@@ -87,6 +88,14 @@ author_profile: true
     font-size: 1.3em;
     color: #333;
     padding-top: 10px;
+  }
+
+  .year-divider {
+    border-top: 1.5px solid #e0e0e0;
+    margin: 25px 0 10px 0;
+    font-weight: 600;
+    color: #555;
+    font-size: 1.1em;
   }
 
   a { color: #1565c0; text-decoration: none; }
@@ -98,151 +107,194 @@ author_profile: true
   }
 </style>
 
-
 <!-- 🧪 UNDER REVIEW -->
-<div class="section-divider"> Under Review (Preprints)</div>
+<div class="section-divider">🧪 Under Review (Preprints)</div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png" alt="underreview">
+  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png">
   <div class="pub-content">
     <span class="label underreview">Under Review</span>
     <span class="label graph">Graph</span>
     <div class="pub-title"><em>GraPE: Graph Prompt Tuning via Mixture of Experts Approach.</em></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Seongyeub Chu, Jeongwhan Choi, Noseong Park, Mun Yi.</div>
+    <div class="pub-venue">Preprint, 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png" alt="underreview">
+  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png">
   <div class="pub-content">
     <span class="label underreview">Under Review</span>
     <span class="label graph">Graph</span>
     <div class="pub-title"><em>Learning Posterior Predictive Distributions for Node Classification from Synthetic Graph Priors.</em></div>
     <div class="pub-meta">Jeongwhan Choi, <strong>Jongwoo Kim</strong>, Woosung Kang, Noseong Park.</div>
+    <div class="pub-venue">Preprint, 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png" alt="underreview">
+  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png">
   <div class="pub-content">
     <span class="label underreview">Under Review</span>
     <span class="label graph">Graph</span>
     <div class="pub-title"><em>Can TabPFN Compete GNNs for Node Classification Using Positional and Structural Features?</em></div>
     <div class="pub-meta">Jeongwhan Choi, Minseo Kim, <strong>Jongwoo Kim</strong>, Woosung Kang, Noseong Park.</div>
+    <div class="pub-venue">Preprint, 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png" alt="underreview">
+  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png">
   <div class="pub-content">
     <span class="label underreview">Under Review</span>
-    <span class="label data">Recommendation</span>
-    <div class="pub-title"><em>AMR: Aspect-Aware Mooc Recommendation in a Heterogeneous View.</em></div>
-    <div class="pub-meta">Seongyeub Chu, <strong>Jongwoo Kim</strong>, Mun Yi.</div>
+    <span class="label vision">Vision</span>
+    <div class="pub-title"><em>Spatial Context-Driven Positive Pair Sampling for Enhanced Histopathology Image Classification.</em> <a href="https://arxiv.org/abs/2503.05170">[arXiv]</a></div>
+    <div class="pub-meta">Willmer Rafell Quinones Robles, Sakonporn Noree, Bryan Wong, <strong>Jongwoo Kim</strong>, Mun Yi.</div>
+    <div class="pub-venue">Preprint, 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png" alt="underreview">
+  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png">
+  <div class="pub-content">
+    <span class="label underreview">Under Review</span>
+    <span class="label recommendation">Recommendation</span>
+    <div class="pub-title"><em>AMR: Aspect-Aware Mooc Recommendation in a Heterogeneous View.</em></div>
+    <div class="pub-meta">Seongyeub Chu, <strong>Jongwoo Kim</strong>, Mun Yi.</div>
+    <div class="pub-venue">Preprint, 2025</div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png">
   <div class="pub-content">
     <span class="label underreview">Under Review</span>
     <span class="label recommendation">Recommendation</span>
     <div class="pub-title"><em>RFMRec: Enhancing Personal Recommendation Using Public Trend Captured via RFM.</em> <a href="https://scholar.google.com/scholar?q=%22RFMRec%3A+Enhancing+Personal+Recommendation+Using+Public+Trend+Captured+via+RFM%22">[Link]</a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Seongyeub Chu, Mun Yi.</div>
+    <div class="pub-venue">Preprint, 2025</div>
   </div>
 </div>
 
-
 <!-- 🎓 CONFERENCES -->
-<div class="section-divider"> Conferences</div>
+<div class="section-divider">🎓 Conferences</div>
+
+<div class="year-divider">2025</div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/NeurIPS_2025.png" alt="neurips">
+  <img class="pub-thumb" src="/assets/images/publications/NeurIPS_2025.png">
   <div class="pub-content">
     <span class="label neurips">NeurIPS</span>
     <span class="label multimodal">Multimodal</span>
     <div class="pub-title"><em>Few-Shot Learning from Gigapixel Images via Hierarchical Vision-Language Alignment and Modeling.</em> <a href="https://arxiv.org/abs/2505.17982">[PDF]</a></div>
     <div class="pub-meta">Bryan Wong†, <strong>Jongwoo Kim†</strong>, Huazhu Fu, Mun Yi.</div>
-    <div class="pub-venue">NeurIPS, 2025</div>
+    <div class="pub-venue">Neural Information Processing Systems (NeurIPS), 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/EMNLP_2025.png" alt="emnlp">
+  <img class="pub-thumb" src="/assets/images/publications/EMNLP_2025.png">
   <div class="pub-content">
     <span class="label emnlp">EMNLP Findings</span>
     <span class="label nlp">NLP</span>
     <div class="pub-title"><em>Not All Options Are Created Equal: Textual Option Weighting for Token-Efficient LLM-Based Knowledge Tracing.</em> <a href="https://arxiv.org/abs/2410.12872">[PDF]</a></div>
     <div class="pub-meta"><strong>Jongwoo Kim†</strong>, Seongyeub Chu†, Bryan Wong, Mun Yi.</div>
-    <div class="pub-venue">EMNLP (Findings), 2025</div>
+    <div class="pub-venue">Empirical Methods in Natural Language Processing (EMNLP Findings), 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/CIKM_2025.png" alt="cikm">
+  <img class="pub-thumb" src="/assets/images/publications/CIKM_2025.png">
   <div class="pub-content">
     <span class="label cikm">CIKM</span>
     <span class="label graph">Graph</span>
     <div class="pub-title"><em>Leveraging Multi-facet Paths for Heterogeneous Graph Representation Learning.</em> <a href="https://arxiv.org/abs/2407.20648">[PDF]</a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Seongyeub Chu, Hyeongmin Park, Bryan Wong, Keejun Han, Mun Yi.</div>
-    <div class="pub-venue">CIKM, 2025</div>
+    <div class="pub-venue">Conference on Information and Knowledge Management (CIKM), 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/MICCAI_2025.png" alt="miccai">
+  <img class="pub-thumb" src="/assets/images/publications/SIGSPATIAL_2025.png">
+  <div class="pub-content">
+    <span class="label sigspatial">SIGSPATIAL</span>
+    <span class="label vision">Vision</span>
+    <div class="pub-title"><em>A Novel Evaluation Framework for 15-Minute City Using Satellite Imagery.</em> <a href="https://scholar.google.com/scholar?q=%22A+Novel+Evaluation+Framework+for+15-Minute+City+Using+Satellite+Imagery%22">[Link]</a></div>
+    <div class="pub-meta">ChanJae Song†, Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Mun Yi.</div>
+    <div class="pub-venue">ACM SIGSPATIAL, 2025</div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/MICCAI_2025.png">
   <div class="pub-content">
     <span class="label miccai">MICCAI</span>
     <span class="label vision">Vision</span>
     <div class="pub-title"><em>MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images.</em> <a href="https://arxiv.org/abs/2407.21604">[PDF]</a></div>
     <div class="pub-meta"><strong>Jongwoo Kim†</strong>, Bryan Wong†, Huazhu Fu, Willmer Rafell Quiñones Robles, Mun Yi.</div>
-    <div class="pub-venue">MICCAI, 2025</div>
+    <div class="pub-venue">Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/NAACL_2025.png" alt="naacl">
+  <img class="pub-thumb" src="/assets/images/publications/NAACL_2025.png">
   <div class="pub-content">
-    <span class="label naacl">NAACL</span>
+    <span class="label naacl">NAACL Findings</span>
     <span class="label nlp">NLP</span>
     <div class="pub-title"><em>Rationale Behind Essay Scores: Enhancing S-LLM's Multi-Trait Essay Scoring with Rationale Generated by LLMs.</em> <a href="https://aclanthology.org/2025.findings-naacl.322.pdf">[PDF]</a></div>
     <div class="pub-meta">Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Bryan Wong, Mun Yi.</div>
-    <div class="pub-venue">NAACL (Findings), 2025</div>
+    <div class="pub-venue">North American Chapter of ACL (NAACL Findings), 2025</div>
   </div>
 </div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/WACV_2025.png" alt="wacv">
+  <img class="pub-thumb" src="/assets/images/publications/CHI_2025.png">
   <div class="pub-content">
-    <span class="label wacv">WACV</span>
+    <span class="label chi">CHI (Oral)</span>
+    <span class="label nlp">NLP</span>
+    <div class="pub-title"><em>Think Together and Work Better: Combining Humans' and LLMs' Think-Aloud Outcomes for Effective Text Evaluation.</em> <a href="https://arxiv.org/pdf/2409.07355">[PDF]</a></div>
+    <div class="pub-meta">Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Mun Yi.</div>
+    <div class="pub-venue">Conference on Human Factors in Computing Systems (CHI, Oral), 2025</div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/WACV_2025.png">
+  <div class="pub-content">
+    <span class="label wacv">WACV (Oral)</span>
     <span class="label vision">Vision</span>
     <div class="pub-title"><em>Uncertainty-based Data-wise Label Smoothing for Calibrating Multiple Instance Learning in Histopathology Image.</em> <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Park_Uncertainty-Based_Data-Wise_Label_Smoothing_for_Calibrating_Multiple_Instance_Learning_in_WACV_2025_paper.pdf">[PDF]</a></div>
     <div class="pub-meta">Hyeongmin Park, Sungrae Hong, Chanjae Song, <strong>Jongwoo Kim</strong>, Mun Yi.</div>
-    <div class="pub-venue">WACV (Oral), 2025</div>
+    <div class="pub-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV, Oral), 2025</div>
   </div>
 </div>
 
+<div class="year-divider">2024</div>
+
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/ISBI_2024.png" alt="isbi">
+  <img class="pub-thumb" src="/assets/images/publications/ISBI_2024.png">
   <div class="pub-content">
     <span class="label isbi">ISBI</span>
     <span class="label vision">Vision</span>
     <div class="pub-title"><em>Leveraging Spatial Relationships in Microscope for Patient Cancer Diagnosis.</em> <a href="https://ieeexplore.ieee.org/document/10635826">[PDF]</a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Minkyu Jeong, Hyeongmin Park, Mun Yi.</div>
-    <div class="pub-venue">ISBI, 2024</div>
+    <div class="pub-venue">IEEE International Symposium on Biomedical Imaging (ISBI), 2024</div>
   </div>
 </div>
 
-<!-- 📚 JOURNAL -->
-<div class="section-divider"> Journals</div>
+<!-- 📚 JOURNALS -->
+<div class="section-divider">📚 Journals</div>
+
+<div class="year-divider">2023</div>
 
 <div class="pub-entry">
-  <img class="pub-thumb" src="/assets/images/publications/TFSC_2023.png" alt="tfsc">
+  <img class="pub-thumb" src="/assets/images/publications/TFSC_2023.png">
   <div class="pub-content">
     <span class="label tfsc">TFSC</span>
     <span class="label data">Data</span>
     <div class="pub-title"><em>How to succeed in the market? Predicting startup success using a machine learning approach.</em> <a href="https://www.sciencedirect.com/science/article/pii/S0040162523002998">[PDF]</a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Hongil Kim, Youngjung Geum.</div>
-    <div class="pub-venue">Technological Forecasting & Social Change, 2023 (IF=13.3)</div>
+    <div class="pub-venue">Technological Forecasting & Social Change (TFSC), 2023 (IF=13.3)</div>
   </div>
 </div>
+
