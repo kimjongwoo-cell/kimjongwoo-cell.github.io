@@ -6,56 +6,76 @@ author_profile: true
 ---
 
 <style>
-  /* 기본 구조 */
-  ul.pub-list {
-    list-style: none;
-    padding-left: 25px;
-    margin: 0;
+  .pub-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #e0e0e0;
   }
 
-  ul.pub-list li {
-    margin-bottom: 18px;
-    padding-left: 10px;
-    border-left: 4px solid transparent;
+  .pub-thumb {
+    width: 140px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    background-color: #f3f3f3;
   }
 
-  /* 학회 라벨 (회색 통일) */
-  .conf-label {
+  .pub-content {
+    flex: 1;
+  }
+
+  .label {
     display: inline-block;
-    min-width: 90px;
-    text-align: center;
-    padding: 3px 6px;
-    margin-right: 8px;
+    padding: 3px 8px;
+    margin-right: 6px;
     border-radius: 6px;
-    font-size: 0.82em;
-    font-weight: bold;
-    background-color: #616161;
+    font-size: 0.78em;
+    font-weight: 700;
     color: white;
   }
 
-  /* 도메인 라벨 (색상으로 구분) */
-  .domain-label {
-    display: inline-block;
-    min-width: 80px;
-    text-align: center;
-    padding: 3px 6px;
-    margin-right: 10px;
-    border-radius: 6px;
-    font-size: 0.8em;
-    font-weight: bold;
-    color: white;
-  }
+  /* 학회별 색상 */
+  .neurips { background-color: #ef6c00; }
+  .emnlp { background-color: #388e3c; }
+  .naacl { background-color: #00796b; }
+  .miccai { background-color: #283593; }
+  .sigspatial { background-color: #6a1b9a; }
+  .wacv { background-color: #5d4037; }
+  .chi { background-color: #795548; }
+  .cikm { background-color: #00897b; }
+  .isbi { background-color: #0277bd; }
+  .tfsc { background-color: #424242; }
+  .underreview { background-color: #9e9e9e; }
 
   /* 도메인별 색상 */
-  .nlp { background-color: #8e24aa; }        /* NLP 보라 */
-  .vision { background-color: #1565c0; }     /* Vision 파랑 */
-  .graph { background-color: #2e7d32; }      /* Graph 초록 */
-  .multimodal { background-color: #3949ab; } /* Multimodal 남보라 */
-  .Recsys { background-color: #00897b; }       /* Data 민트 */
-  .journal { background-color: #424242; }    /* Journal 회색 */
-  .underreview { background-color: #9e9e9e; }/* Under Review 회색 */
+  .nlp { background-color: #8e24aa; }
+  .vision { background-color: #1565c0; }
+  .graph { background-color: #2e7d32; }
+  .data { background-color: #00897b; }
+  .multimodal { background-color: #3949ab; }
+  .recommendation { background-color: #d81b60; }
 
-  /* 섹션 헤더 */
+  .pub-title {
+    font-weight: 700;
+    font-size: 1.05em;
+    margin: 4px 0 4px 0;
+  }
+
+  .pub-meta {
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 4px;
+  }
+
+  .pub-venue {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555;
+  }
+
   .section-divider {
     border-top: 2px solid #ccc;
     margin-top: 40px;
@@ -66,159 +86,128 @@ author_profile: true
     padding-top: 10px;
   }
 
-  /* 년도 구분선 */
-  .year-divider {
-    border-top: 1.5px solid #e0e0e0;
-    margin: 25px 0 10px 0;
-    font-weight: 600;
-    color: #555;
-    font-size: 1.1em;
-  }
-
-  /* 링크 */
   a { color: #1565c0; text-decoration: none; }
   a:hover { text-decoration: underline; }
+
+  @media (max-width: 700px) {
+    .pub-entry { flex-direction: column; }
+    .pub-thumb { width: 100%; height: 160px; }
+  }
 </style>
 
-<!-- 🧪 PREPRINTS -->
-<div class="section-divider">🧪 Underreview</div>
-<ul class="pub-list">
-  <li>
-    <span class="conf-label">Under Review</span>
-    <span class="domain-label graph">Graph</span>
-    <strong>Jongwoo Kim</strong>, Seongyeub Chu, Jeongwhan Choi, Noseong Park, Mun Young Yi.  
-    <em>GraPE: Graph Prompt Tuning via Mixture of Experts Approach.</em>
-  </li>
-  
-  <li>
-    <span class="conf-label">Under Review</span>
-    <span class="domain-label graph">Graph</span>
-    Jeongwhan Choi, <strong>Jongwoo Kim</strong>, Woosung Kang, Noseong Park.  
-    <em>Learning Posterior Predictive Distributions for Node Classification from Synthetic Graph Priors.</em>  
-  </li>
+<!-- 🧪 UNDER REVIEW -->
+<div class="section-divider">🧪 Under Review</div>
 
-  <li>
-    <span class="conf-label">Under Review</span>
-    <span class="domain-label graph">Graph</span>
-    Jeongwhan Choi, Minseo Kim, <strong>Jongwoo Kim</strong>, Woosung Kang, Noseong Park.  
-    <em>Can TabPFN Compete GNNs for Node Classification Using Positional and Structural Features?</em>  
-  </li>
-  
-  <li>
-    <span class="conf-label">Under Review</span>
-    <span class="domain-label vision">Vision</span>
-    Willmer Rafell Quinones Robles, Sakonporn Noree, Bryan Wong, <strong>Jongwoo Kim</strong>, Mun Yi.  
-    <em>Spatial Context-Driven Positive Pair Sampling for Enhanced Histopathology Image Classification.</em>  
-    <a href="https://arxiv.org/abs/2503.05170" target="_blank">[arXiv]</a>
-  </li>
-    
-  <li>
-    <span class="conf-label">Under Review</span>
-    <span class="domain-label data">Recsys</span>
-    Seongyeub Chu, <strong>Jongwoo Kim</strong>, Mun Yi.  
-    <em>AMR: Aspect-Aware Mooc Recommendation in a Heterogeneous View.</em> 
-  </li>
-  
-  <li>
-    <span class="conf-label">Under Review</span>
-    <span class="domain-label data">Data</span>
-    <strong>Jongwoo Kim</strong>, Seongyeub Chu, Mun Yi.  
-    <em>RFMRec: Enhancing Personal Recommendation Using Public Trend Captured via RFM.</em>  
-    <a href="https://scholar.google.com/scholar?q=%22RFMRec%3A+Enhancing+Personal+Recommendation+Using+Public+Trend+Captured+via+RFM%22" target="_blank">[Link]</a>
-  </li>
-</ul>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png" alt="underreview">
+  <div class="pub-content">
+    <span class="label underreview">Under Review</span>
+    <span class="label graph">Graph</span>
+    <div class="pub-title"><em>GraPE: Graph Prompt Tuning via Mixture of Experts Approach.</em></div>
+    <div class="pub-meta"><strong>Jongwoo Kim</strong>, Seongyeub Chu, Jeongwhan Choi, Noseong Park, Mun Yi.</div>
+  </div>
+</div>
+
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/UnderReview_2025.png" alt="underreview">
+  <div class="pub-content">
+    <span class="label underreview">Under Review</span>
+    <span class="label vision">Vision</span>
+    <div class="pub-title"><em>Spatial Context-Driven Positive Pair Sampling for Enhanced Histopathology Image Classification.</em> <a href="https://arxiv.org/abs/2503.05170" target="_blank">[PDF]</a></div>
+    <div class="pub-meta">Willmer Rafell Quinones Robles, Sakonporn Noree, Bryan Wong, <strong>Jongwoo Kim</strong>, Mun Yi.</div>
+  </div>
+</div>
 
 <!-- 🎓 CONFERENCES -->
 <div class="section-divider">🎓 Conferences</div>
 
-<div class="year-divider">2025</div>
-<ul class="pub-list">
-  <li>
-    <span class="conf-label">NeurIPS</span>
-    <span class="domain-label multimodal">Multimodal</span>
-    Bryan Wong†, <strong>Jongwoo Kim†</strong>, Huazhu Fu, Mun Yi.  
-    <em>Few-Shot Learning from Gigapixel Images via Hierarchical Vision-Language Alignment and Modeling.</em>  
-    <a href="https://arxiv.org/abs/2505.17982" target="_blank">[PDF]</a>
-  </li>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/NeurIPS_2025.png" alt="neurips">
+  <div class="pub-content">
+    <span class="label neurips">NeurIPS</span>
+    <span class="label multimodal">Multimodal</span>
+    <div class="pub-title"><em>Few-Shot Learning from Gigapixel Images via Hierarchical Vision-Language Alignment and Modeling.</em> <a href="https://arxiv.org/abs/2505.17982">[PDF]</a></div>
+    <div class="pub-meta">Bryan Wong†, <strong>Jongwoo Kim†</strong>, Huazhu Fu, Mun Yi.</div>
+    <div class="pub-venue">NeurIPS, 2025</div>
+  </div>
+</div>
 
-  <li>
-    <span class="conf-label">EMNLP Findings</span>
-    <span class="domain-label nlp">NLP</span>
-    <strong>Jongwoo Kim†</strong>, Seongyeub Chu†, Bryan Wong, Mun Yi.  
-    <em>Not All Options Are Created Equal: Textual Option Weighting for Token-Efficient LLM-Based Knowledge Tracing.</em>  
-    <a href="https://arxiv.org/abs/2410.12872" target="_blank">[PDF]</a>
-  </li>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/EMNLP_2025.png" alt="emnlp">
+  <div class="pub-content">
+    <span class="label emnlp">EMNLP Findings</span>
+    <span class="label nlp">NLP</span>
+    <div class="pub-title"><em>Not All Options Are Created Equal: Textual Option Weighting for Token-Efficient LLM-Based Knowledge Tracing.</em> <a href="https://arxiv.org/abs/2410.12872">[PDF]</a></div>
+    <div class="pub-meta"><strong>Jongwoo Kim†</strong>, Seongyeub Chu†, Bryan Wong, Mun Yi.</div>
+    <div class="pub-venue">EMNLP (Findings), 2025</div>
+  </div>
+</div>
 
-  <li>
-    <span class="conf-label">CIKM</span>
-    <span class="domain-label graph">Graph</span>
-    <strong>Jongwoo Kim</strong>, Seongyeub Chu, Hyeongmin Park, Bryan Wong, Keejun Han, Mun Yi.  
-    <em>Leveraging Multi-facet Paths for Heterogeneous Graph Representation Learning.</em>  
-    <a href="https://arxiv.org/abs/2407.20648" target="_blank">[PDF]</a>
-  </li>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/CIKM_2025.png" alt="cikm">
+  <div class="pub-content">
+    <span class="label cikm">CIKM</span>
+    <span class="label graph">Graph</span>
+    <div class="pub-title"><em>Leveraging Multi-facet Paths for Heterogeneous Graph Representation Learning.</em> <a href="https://arxiv.org/abs/2407.20648">[PDF]</a></div>
+    <div class="pub-meta"><strong>Jongwoo Kim</strong>, Seongyeub Chu, Hyeongmin Park, Bryan Wong, Keejun Han, Mun Yi.</div>
+    <div class="pub-venue">CIKM, 2025</div>
+  </div>
+</div>
 
-  <li>
-    <span class="conf-label">SIGSPATIAL</span>
-    <span class="domain-label vision">Vision</span>
-    ChanJae Song†, Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Mun Yi.  
-    <em>A Novel Evaluation Framework for 15-Minute City Using Satellite Imagery.</em>  
-    <a href="https://scholar.google.com/scholar?q=%22A+Novel+Evaluation+Framework+for+15-Minute+City+Using+Satellite+Imagery%22" target="_blank">[Link]</a>
-  </li>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/MICCAI_2025.png" alt="miccai">
+  <div class="pub-content">
+    <span class="label miccai">MICCAI</span>
+    <span class="label vision">Vision</span>
+    <div class="pub-title"><em>MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images.</em> <a href="https://arxiv.org/abs/2407.21604">[PDF]</a></div>
+    <div class="pub-meta"><strong>Jongwoo Kim†</strong>, Bryan Wong†, Huazhu Fu, Willmer Rafell Quiñones Robles, Mun Yi.</div>
+    <div class="pub-venue">MICCAI, 2025</div>
+  </div>
+</div>
 
-  <li>
-    <span class="conf-label">MICCAI</span>
-    <span class="domain-label vision">Vision</span>
-    <strong>Jongwoo Kim†</strong>, Bryan Wong†, Huazhu Fu, Willmer Rafell Quiñones Robles, Mun Yi.  
-    <em>MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images.</em>  
-    <a href="https://arxiv.org/abs/2407.21604" target="_blank">[PDF]</a>
-  </li>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/NAACL_2025.png" alt="naacl">
+  <div class="pub-content">
+    <span class="label naacl">NAACL</span>
+    <span class="label nlp">NLP</span>
+    <div class="pub-title"><em>Rationale Behind Essay Scores: Enhancing S-LLM's Multi-Trait Essay Scoring with Rationale Generated by LLMs.</em> <a href="https://aclanthology.org/2025.findings-naacl.322.pdf">[PDF]</a></div>
+    <div class="pub-meta">Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Bryan Wong, Mun Yi.</div>
+    <div class="pub-venue">NAACL (Findings), 2025</div>
+  </div>
+</div>
 
-  <li>
-    <span class="conf-label">NAACL Findings</span>
-    <span class="domain-label nlp">NLP</span>
-    Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Bryan Wong, Mun Yi.  
-    <em>Rationale Behind Essay Scores: Enhancing S-LLM's Multi-Trait Essay Scoring with Rationale Generated by LLMs.</em>  
-    <a href="https://aclanthology.org/2025.findings-naacl.322.pdf" target="_blank">[PDF]</a>
-  </li>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/WACV_2025.png" alt="wacv">
+  <div class="pub-content">
+    <span class="label wacv">WACV</span>
+    <span class="label vision">Vision</span>
+    <div class="pub-title"><em>Uncertainty-based Data-wise Label Smoothing for Calibrating Multiple Instance Learning in Histopathology Image.</em> <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Park_Uncertainty-Based_Data-Wise_Label_Smoothing_for_Calibrating_Multiple_Instance_Learning_in_WACV_2025_paper.pdf">[PDF]</a></div>
+    <div class="pub-meta">Hyeongmin Park, Sungrae Hong, Chanjae Song, <strong>Jongwoo Kim</strong>, Mun Yi.</div>
+    <div class="pub-venue">WACV (Oral), 2025</div>
+  </div>
+</div>
 
-  <li>
-    <span class="conf-label">CHI (Oral)</span>
-    <span class="domain-label nlp">NLP</span>
-    Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Mun Yi.  
-    <em>Think Together and Work Better: Combining Humans' and LLMs' Think-Aloud Outcomes for Effective Text Evaluation.</em> (Oral)  
-    <a href="https://arxiv.org/pdf/2409.07355" target="_blank">[PDF]</a>
-  </li>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/ISBI_2024.png" alt="isbi">
+  <div class="pub-content">
+    <span class="label isbi">ISBI</span>
+    <span class="label vision">Vision</span>
+    <div class="pub-title"><em>Leveraging Spatial Relationships in Microscope for Patient Cancer Diagnosis.</em> <a href="https://ieeexplore.ieee.org/document/10635826">[PDF]</a></div>
+    <div class="pub-meta"><strong>Jongwoo Kim</strong>, Minkyu Jeong, Hyeongmin Park, Mun Yi.</div>
+    <div class="pub-venue">ISBI, 2024</div>
+  </div>
+</div>
 
-  <li>
-    <span class="conf-label">WACV (Oral)</span>
-    <span class="domain-label vision">Vision</span>
-    Hyeongmin Park, Sungrae Hong, Chanjae Song, <strong>Jongwoo Kim</strong>, Mun Yi.  
-    <em>Uncertainty-based Data-wise Label Smoothing for Calibrating Multiple Instance Learning in Histopathology Image.</em> (Oral)  
-    <a href="https://openaccess.thecvf.com/content/WACV2025/papers/Park_Uncertainty-Based_Data-Wise_Label_Smoothing_for_Calibrating_Multiple_Instance_Learning_in_WACV_2025_paper.pdf" target="_blank">[PDF]</a>
-  </li>
-</ul>
-
-<div class="year-divider">2024</div>
-<ul class="pub-list">
-  <li>
-    <span class="conf-label">ISBI</span>
-    <span class="domain-label vision">Vision</span>
-    <strong>Jongwoo Kim</strong>, Minkyu Jeong, Hyeongmin Park, Mun Yi.  
-    <em>Leveraging Spatial Relationships in Microscope for Patient Cancer Diagnosis.</em>  
-    <a href="https://ieeexplore.ieee.org/document/10635826" target="_blank">[PDF]</a>
-  </li>
-</ul>
-
-<!-- 📚 JOURNALS -->
+<!-- 📚 JOURNAL -->
 <div class="section-divider">📚 Journals</div>
 
-<div class="year-divider">2023</div>
-<ul class="pub-list">
-  <li>
-    <span class="conf-label">TFSC</span>
-    <span class="domain-label data">journal</span>
-    <strong>Jongwoo Kim</strong>, Hongil Kim, Youngjung Geum.  
-    <em>How to succeed in the market? Predicting startup success using a machine learning approach.</em>  
-    <a href="https://www.sciencedirect.com/science/article/pii/S0040162523002998" target="_blank">[PDF]</a> (IF=13.3)
-  </li>
-</ul>
+<div class="pub-entry">
+  <img class="pub-thumb" src="/assets/images/publications/TFSC_2023.png" alt="tfsc">
+  <div class="pub-content">
+    <span class="label tfsc">TFSC</span>
+    <span class="label data">Data</span>
+    <div class="pub-title"><em>How to succeed in the market? Predicting startup success using a machine learning approach.</em> <a href="https://www.sciencedirect.com/science/article/pii/S0040162523002998">[PDF]</a></div>
+    <div class="pub-meta"><strong>Jongwoo Kim</strong>, Hongil Kim, Youngjung Geum.</div>
+    <div class="pub-venue">Technological Forecasting & Social Change, 2023 (IF=13.3)</div>
+  </div>
+</div>
