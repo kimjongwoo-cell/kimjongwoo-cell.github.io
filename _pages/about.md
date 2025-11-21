@@ -8,8 +8,9 @@ redirect_from:
 ---
 
 Hello, I’m Jongwoo Kim, a Ph.D. student in the Department of Industrial and Systems Engineering at KAIST,  
-advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist) and co-advised by [Prof. Noseong Park](https://sites.google.com/view/noseong).  
+advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist).  
 I’m currently engaged in research activities alongside my great colleagues at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).
+
 
 
 My research focuses on building practical AI systems for real-world applications, particularly in medical pathology and education.  
