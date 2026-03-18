@@ -11,11 +11,10 @@ Hello, I’m Jongwoo Kim, a Ph.D. student in the Department of Industrial and Sy
 advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist) and [Prof. Noseong Park](https://sites.google.com/view/npark).  
 I’m currently engaged in research activities alongside my great colleagues at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).
 
-
-
 My research focuses on building practical AI systems for real-world applications, particularly in medical pathology and education.  
-Recently, my work has centered on graph-based learning, exploring how the relational structure of data can be leveraged to enhance reasoning and representation.  
-I’m particularly interested in integrating Graph Neural Networks (GNNs), Large Language Models (LLMs), and Vision-Language Models (VLMs)  
-to develop graph-enhanced multimodal foundation models capable of unified reasoning across text, vision, and structured data.
+1) Multimodal Large Language Models (vision/language/graph): unified reasoning across visual, textual, and
+graph-structured inputs. 2) JEPA and World Models: predictive representation learning and latent dynamics for
+improved abstraction and generalization. 3) Graph Prior Fitted Networks (Graph PFN): scalable predictive function
+learning on relational and graph-structured domains.
 
 I actively seek practical challenges from the real world, regardless of domain.
