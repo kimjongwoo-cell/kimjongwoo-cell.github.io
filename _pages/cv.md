@@ -6,5 +6,5 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-<meta http-equiv="refresh" content="0; url=/files/CV_Jongwoo.pdf">
+<meta http-equiv="refresh" content="0; url=/files/cv_jongwoo_cv.pdf">
 
