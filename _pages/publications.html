@@ -107,6 +107,18 @@ author_profile: true
   a { color: #1565c0; text-decoration: none; }
   a:hover { text-decoration: underline; }
 
+  /* 논문 제목 링크: 겉보기에는 일반 검정 텍스트처럼 표시 */
+  .pub-title a,
+  .pub-title a:visited {
+    color: #111;
+    text-decoration: none;
+  }
+
+  .pub-title a:hover {
+    color: #111;
+    text-decoration: none;
+  }
+
   @media (max-width: 700px) {
     .pub-entry { flex-direction: column; }
     .pub-thumb { width: 100%; height: 180px; }
