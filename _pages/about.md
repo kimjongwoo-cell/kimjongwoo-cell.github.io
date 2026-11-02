@@ -7,11 +7,12 @@ redirect_from:
   - /about.html
 ---
 
-Hello, I’m Jongwoo Kim, a Ph.D. student in the Department of Industrial and Systems Engineering at KAIST,  
-advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist) and [Prof. Noseong Park](https://sites.google.com/view/npark).  
-I’m currently engaged in research activities alongside my great colleagues at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).
+Hello, I’m Jongwoo Kim, a Ph.D. student in Industrial and Systems Engineering at KAIST, advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist) and [Prof. Noseong Park](https://sites.google.com/view/npark). I work at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).
 
-My research focuses on building practical AI systems for real-world applications.  
-1) JEPA and World Models: predictive representation learning and latent dynamics for improved abstraction and generalization. 2) Computational Pathology: AI methods for analyzing and interpreting histopathology images. 3) Graph Learning: representation learning and prediction on relational and graph-structured data.
+I build practical AI systems for real-world problems, focusing on:
 
-I actively seek practical challenges from the real world, regardless of domain.
+- **World Models and JEPA**: bringing latent predictive learning to real domains such as pathology, graphs, and education.
+- **Computational Pathology**: modeling the hierarchical, multi-scale structure of gigapixel slides, from local tissue patterns to the whole slide.
+- **Graph Learning**: capturing the right inductive biases for graph-structured data, so that models generalize across graphs.
+
+I’m always looking for practical challenges, regardless of domain.
