@@ -30,7 +30,7 @@ redirect_from:
   .cv-sub { font-size: 0.84em; color: #6b7280; margin: 0 0 0.7em 0; }
   @media (max-width: 700px) { .sel-pub { flex-direction: column; align-items: flex-start; } .sel-pub img { width: 100%; height: 160px; } .cv-row { flex-direction: column; gap: 0; } }
   .page__content { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-  .sel-title { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.02em !important; }
+  .sel-title { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.02em !important; color: #0f172a; }
   .sel-meta b { color: #0f172a; font-weight: 600; text-decoration: underline; text-decoration-color: #c7d2fe; text-decoration-thickness: 2px; text-underline-offset: 3px; }
   .sel-venue { font-style: normal !important; }
   .venue-tag { border-radius: 6px !important; letter-spacing: 0.06em !important; text-transform: uppercase; }
