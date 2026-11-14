@@ -12,9 +12,9 @@ redirect_from:
   .page__content h2::after { content: ""; display: block; width: 42px; height: 3px; margin-top: 0.45em; border-radius: 2px; background: linear-gradient(90deg, #1d4ed8, #7c3aed); }
   .home-section { margin-top: 1.6em; }
   .news-list { list-style: none; margin: 0.6em 0 0 0; padding-left: 1.1em; border-left: 2px solid #e5e7eb; }
-  .news-list li { position: relative; margin-bottom: 0.7em; font-size: 0.92em; line-height: 1.5; }
+  .news-list li { position: relative; display: flex; gap: 0.6em; margin-bottom: 0.7em; font-size: 0.92em; line-height: 1.5; }
   .news-list li::before { content: ""; position: absolute; left: -1.47em; top: 0.48em; width: 9px; height: 9px; border-radius: 50%; background: #fff; border: 2px solid #1d4ed8; }
-  .news-date { display: inline-block; min-width: 5.4em; font-weight: 700; color: #1d4ed8; font-variant-numeric: tabular-nums; }
+  .news-date { flex: 0 0 5.4em; font-weight: 700; color: #1d4ed8; font-variant-numeric: tabular-nums; }
   .sel-pub { display: flex; gap: 18px; align-items: center; margin-bottom: 14px; padding: 12px; border: 1px solid #eef0f3; border-radius: 12px; background: #fff; box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 4px 14px rgba(15,23,42,0.05); transition: box-shadow .2s ease, transform .2s ease; }
   .sel-pub:hover { box-shadow: 0 2px 4px rgba(15,23,42,0.06), 0 10px 24px rgba(15,23,42,0.08); transform: translateY(-1px); }
   .sel-pub img { width: 190px; height: 116px; object-fit: contain; border-radius: 8px; background: #f8fafc; padding: 4px; flex-shrink: 0; }
