@@ -45,13 +45,11 @@ I’m always looking for practical challenges, regardless of domain.
 ## News
 
 <ul class="news-list">
-  <li><span class="news-date">Nov 2026</span> GraPE is accepted to <b>KDD 2027</b>.</li>
-  <li><span class="news-date">Aug 2026</span> Knowledge World Model for learning path recommendation is accepted to <b>CIKM 2026</b>.</li>
-  <li><span class="news-date">2026</span> FeedEval is accepted to <b>ACL 2026 Findings</b>.</li>
-  <li><span class="news-date">2026</span> Our work on posterior predictive node classification (co-first author) is accepted to <b>ICLR 2026</b>.</li>
-  <li><span class="news-date">2025</span> Hierarchical vision-language few-shot learning for gigapixel images (co-first author) is accepted to <b>NeurIPS 2025</b>.</li>
-  <li><span class="news-date">2025</span> Multi-facet path learning for heterogeneous graphs is accepted to <b>CIKM 2025</b> as an <b>oral</b> presentation.</li>
-  <li><span class="news-date">2025</span> Papers at <b>MICCAI 2025</b>, <b>EMNLP 2025 Findings</b>, <b>ACM SIGSPATIAL 2025</b>, <b>NAACL 2025 Findings</b>, <b>CHI 2025</b> (oral), and <b>WACV 2025</b> (oral).</li>
+  <li><span class="news-date">Nov 2026</span><span>GraPE is accepted to <b>KDD 2027</b>.</span></li>
+  <li><span class="news-date">Aug 2026</span><span>Knowledge World Model for learning path recommendation is accepted to <b>CIKM 2026</b>.</span></li>
+  <li><span class="news-date">Apr 2026</span><span>FeedEval is accepted to <b>ACL 2026 Findings</b>.</span></li>
+  <li><span class="news-date">Jan 2026</span><span>Our work on posterior predictive node classification (co-first author) is accepted to <b>ICLR 2026</b>.</span></li>
+  <li><span class="news-date">Sep 2025</span><span>Hierarchical vision-language few-shot learning for gigapixel images (co-first author) is accepted to <b>NeurIPS 2025</b>.</span></li>
 </ul>
 
 </div>
