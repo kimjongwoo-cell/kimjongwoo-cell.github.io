@@ -125,9 +125,24 @@ author_profile: true
     .pub-entry { flex-direction: column; }
     .pub-thumb { width: 100%; height: 180px; }
   }
+  /* refined layout */
+  .pub-entry { gap: 18px; padding: 14px; margin-bottom: 14px; border: 1px solid #eef0f3; border-bottom: 1px solid #eef0f3; border-radius: 12px; background: #fff; box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 4px 14px rgba(15,23,42,0.05); transition: box-shadow .2s ease, transform .2s ease; }
+  .pub-entry:hover { box-shadow: 0 2px 4px rgba(15,23,42,0.06), 0 10px 24px rgba(15,23,42,0.08); transform: translateY(-1px); }
+  .pub-thumb { width: 220px; height: 136px; border: none; box-shadow: none; background-color: #f8fafc; border-radius: 8px; }
+  .label { border-radius: 999px; padding: 2px 9px; letter-spacing: 0.03em; font-size: 0.72em; }
+  .pub-title a:hover { color: #1d4ed8; }
+  .pub-meta { color: #4b5563; }
+  .pub-venue { color: #6b7280; }
+  .acc { display: inline-block; margin-left: 6px; padding: 0 7px; border-radius: 999px; font-size: 0.86em; font-style: normal; color: #1d4ed8; background: #eff4ff; }
+  .section-divider { border-top: none; font-size: 1.15em; letter-spacing: 0.04em; text-transform: uppercase; color: #1f2937; }
+  .section-divider::after { content: ""; display: block; width: 42px; height: 3px; margin-top: 0.45em; border-radius: 2px; background: linear-gradient(90deg, #1d4ed8, #7c3aed); }
+  .year-divider { border-top: none; color: #9ca3af; font-size: 1.0em; letter-spacing: 0.05em; }
+  .pub-note { font-size: 0.85em; color: #6b7280; margin: 0.4em 0 0 0; }
 </style>
 
 <!-- 🧪 UNDER REVIEW -->
+<p class="pub-note">† equal contribution.</p>
+
 <div class="section-divider">Under Review</div>
 <div class="pub-entry">
   <img class="pub-thumb" src="/images/lavim-figure2.png" alt="LAVIM figure">
@@ -177,7 +192,7 @@ author_profile: true
     <span class="label underreview">UNDER REVIEW</span>
     <span class="label worldmodel">World Model</span>
     <span class="label vision">Vision</span>
-    <div class="pub-title"><em>Cross-Scale Latent Predictive Pretraining for Whole-Slide Image.</em></div>
+    <div class="pub-title"><em>Cross-Scale Latent Predictive Pretraining for Whole-Slide Images.</em></div>
     <div class="pub-meta"> <strong>Jongwoo Kim</strong>, Willmer Rafell Quinones Robles, Bryan Wong, Mun Yi.</div>
     <div class="pub-venue">Preprint, 2026</div>
   </div>
@@ -216,7 +231,7 @@ author_profile: true
 
 
 <!-- 🎓 CONFERENCES -->
-<div class="section-divider"> Conferences</div>
+<div class="section-divider">Conferences</div>
 
 <div class="year-divider">2027</div>
 
@@ -236,7 +251,7 @@ author_profile: true
 <div class="pub-entry">
   <img class="pub-thumb" src="/images/KWM.png">
   <div class="pub-content">
-    <span class="label underreview">CIKM</span>
+    <span class="label cikm">CIKM</span>
     <span class="label worldmodel">World Model</span>
     <span class="label recommendation">Recommendation</span>
     <div class="pub-title"><em>Knowledge World Model for Learning Path Recommendation.</em></div>
@@ -252,7 +267,7 @@ author_profile: true
     <span class="label nlp">NLP</span>
     <div class="pub-title"><a href="https://arxiv.org/abs/2601.04574"><em>FeedEval: Pedagogically Aligned Evaluation of LLM-Generated Essay Feedback.</em></a></div>
     <div class="pub-meta">Seongyeub Chu, <strong>Jongwoo Kim</strong>,   Mun Yi.</div>
-    <div class="pub-venue"> The Association for Computational Linguistics (ACL Findings), 2026</div>
+    <div class="pub-venue">Association for Computational Linguistics (ACL Findings), 2026 <span class="acc">Findings acceptance rate 17.8%</span></div>
   </div>
 </div>
 
@@ -264,7 +279,7 @@ author_profile: true
     <span class="label graph">Graph</span>
     <div class="pub-title"><a href="https://openreview.net/forum?id=FmxRzlu0rT"><em>Learning Posterior Predictive Distributions for Node Classification from Synthetic Graph Priors.</em></a></div>
     <div class="pub-meta">Jeongwhan Choi†, <strong>Jongwoo Kim†</strong>, Woosung Kang, Noseong Park.</div>
-    <div class="pub-venue">International Conference on Learning Representations, 2026</div>
+    <div class="pub-venue">International Conference on Learning Representations (ICLR), 2026 <span class="acc">Acceptance rate 27.4%</span></div>
   </div>
 </div>
 
@@ -279,7 +294,7 @@ author_profile: true
     <span class="label nlp">NLP</span>
     <div class="pub-title"><a href="https://arxiv.org/abs/2505.17982"><em>Few-Shot Learning from Gigapixel Images via Hierarchical Vision-Language Alignment and Modeling.</em></a></div>
     <div class="pub-meta">Bryan Wong†, <strong>Jongwoo Kim†</strong>, Huazhu Fu, Mun Yi.</div>
-    <div class="pub-venue">Neural Information Processing Systems (NeurIPS), 2025</div>
+    <div class="pub-venue">Neural Information Processing Systems (NeurIPS), 2025 <span class="acc">Acceptance rate 24.5%</span></div>
   </div>
 </div>
 
@@ -297,11 +312,11 @@ author_profile: true
 <div class="pub-entry">
   <img class="pub-thumb" src="/images/CIKM_2025.png">
   <div class="pub-content">
-    <span class="label cikm">CIKM</span>
+    <span class="label cikm">CIKM (ORAL)</span>
     <span class="label graph">Graph</span>
     <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3746252.3761099"><em>Leveraging Multi-facet Paths for Heterogeneous Graph Representation Learning.</em></a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Seongyeub Chu, Hyeongmin Park, Bryan Wong, Keejun Han, Mun Yi.</div>
-    <div class="pub-venue">Conference on Information and Knowledge Management (CIKM), 2025</div>
+    <div class="pub-venue">Conference on Information and Knowledge Management (CIKM, Oral), 2025 <span class="acc">Full-paper acceptance rate 27%</span></div>
   </div>
 </div>
 
@@ -335,7 +350,7 @@ author_profile: true
     <span class="label nlp">NLP</span>
     <div class="pub-title"><a href="https://aclanthology.org/2025.findings-naacl.322/"><em>Rationale Behind Essay Scores: Enhancing S-LLM's Multi-Trait Essay Scoring with Rationale Generated by LLMs.</em></a></div>
     <div class="pub-meta">Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Bryan Wong, Mun Yi.</div>
-    <div class="pub-venue">North American Chapter of ACL (NAACL Findings), 2025</div>
+    <div class="pub-venue">North American Chapter of ACL (NAACL Findings), 2025 <span class="acc">Findings acceptance rate 15%</span></div>
   </div>
 </div>
 
@@ -346,7 +361,7 @@ author_profile: true
     <span class="label nlp">NLP</span>
     <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3706598.3713181"><em>Think Together and Work Better: Combining Humans' and LLMs' Think-Aloud Outcomes for Effective Text Evaluation.</em></a></div>
     <div class="pub-meta">Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Mun Yi.</div>
-    <div class="pub-venue">Conference on Human Factors in Computing Systems (CHI, Oral), 2025</div>
+    <div class="pub-venue">Conference on Human Factors in Computing Systems (CHI, Oral), 2025 <span class="acc">Acceptance rate 24.9%</span></div>
   </div>
 </div>
 
@@ -375,7 +390,7 @@ author_profile: true
 </div>
 
 <!-- 📚 JOURNALS -->
-<div class="section-divider">📚 Journals</div>
+<div class="section-divider">Journals</div>
 
 <div class="year-divider">2023</div>
 
@@ -385,12 +400,12 @@ author_profile: true
     <span class="label tfsc">TFSC</span>
     <div class="pub-title"><a href="https://www.sciencedirect.com/science/article/pii/S0040162523002998"><em>How to succeed in the market? Predicting startup success using a machine learning approach.</em></a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Hongil Kim, Youngjung Geum.</div>
-    <div class="pub-venue">Technological Forecasting & Social Change (TFSC), 2023 (IF=13.3)</div>
+    <div class="pub-venue">Technological Forecasting & Social Change (TFSC), 2023 <span class="acc">IF 13.3</span></div>
   </div>
 
  </div> 
 
-<div class="section-divider">📚 Preprint</div>
+<div class="section-divider">Preprints</div>
   <div class="pub-entry">
   <img class="pub-thumb" src="/images/AMR.png">
   <div class="pub-content">
@@ -405,7 +420,6 @@ author_profile: true
 
   
 <div class="pub-entry">
-  <img class="pub-thumb" src="/images/UnderReview_2025.png">
   <div class="pub-content">
     <span class="label underreview">PREPRINT</span>
     <span class="label graph">Graph</span>
