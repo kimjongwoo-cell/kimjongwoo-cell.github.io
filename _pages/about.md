@@ -7,6 +7,7 @@ redirect_from:
   - /about.html
 ---
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
 <style>
   .page__content h2 { font-size: 1.15em; letter-spacing: 0.04em; text-transform: uppercase; color: #1f2937; border-bottom: none; padding-bottom: 0.3em; margin-top: 2.2em; position: relative; }
   .page__content h2::after { content: ""; display: block; width: 42px; height: 3px; margin-top: 0.45em; border-radius: 2px; background: linear-gradient(90deg, #1d4ed8, #7c3aed); }
@@ -28,6 +29,11 @@ redirect_from:
   .cv-row span:last-child { color: #6b7280; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .cv-sub { font-size: 0.84em; color: #6b7280; margin: 0 0 0.7em 0; }
   @media (max-width: 700px) { .sel-pub { flex-direction: column; align-items: flex-start; } .sel-pub img { width: 100%; height: 160px; } .cv-row { flex-direction: column; gap: 0; } }
+  .page__content { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .sel-title { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.02em !important; }
+  .sel-meta b { color: #0f172a; font-weight: 600; text-decoration: underline; text-decoration-color: #c7d2fe; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .sel-venue { font-style: normal !important; }
+  .venue-tag { border-radius: 6px !important; letter-spacing: 0.06em !important; text-transform: uppercase; }
 </style>
 
 Hello, I’m Jongwoo Kim, a Ph.D. student in Industrial and Systems Engineering at KAIST, advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist) and [Prof. Noseong Park](https://sites.google.com/view/npark). I work at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).

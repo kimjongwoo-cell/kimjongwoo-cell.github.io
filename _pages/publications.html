@@ -5,6 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
 <style>
   /* 메인 구조 */
   .pub-entry {
@@ -126,18 +127,28 @@ author_profile: true
     .pub-thumb { width: 100%; height: 180px; }
   }
   /* refined layout */
-  .pub-entry { gap: 18px; padding: 14px; margin-bottom: 14px; border: 1px solid #eef0f3; border-bottom: 1px solid #eef0f3; border-radius: 12px; background: #fff; box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 4px 14px rgba(15,23,42,0.05); transition: box-shadow .2s ease, transform .2s ease; }
-  .pub-entry:hover { box-shadow: 0 2px 4px rgba(15,23,42,0.06), 0 10px 24px rgba(15,23,42,0.08); transform: translateY(-1px); }
-  .pub-thumb { width: 220px; height: 136px; border: none; box-shadow: none; background-color: #f8fafc; border-radius: 8px; }
-  .label { border-radius: 999px; padding: 2px 9px; letter-spacing: 0.03em; font-size: 0.72em; }
-  .pub-title a:hover { color: #1d4ed8; }
-  .pub-meta { color: #4b5563; }
-  .pub-venue { color: #6b7280; }
-  .acc { display: inline-block; margin-left: 6px; padding: 0 7px; border-radius: 999px; font-size: 0.86em; font-style: normal; color: #1d4ed8; background: #eff4ff; }
-  .section-divider { border-top: none; font-size: 1.15em; letter-spacing: 0.04em; text-transform: uppercase; color: #1f2937; }
-  .section-divider::after { content: ""; display: block; width: 42px; height: 3px; margin-top: 0.45em; border-radius: 2px; background: linear-gradient(90deg, #1d4ed8, #7c3aed); }
-  .year-divider { border-top: none; color: #9ca3af; font-size: 1.0em; letter-spacing: 0.05em; }
-  .pub-note { font-size: 0.85em; color: #6b7280; margin: 0.4em 0 0 0; }
+  .page__content { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .pub-note { font-size: 0.82em; color: #6b7280; margin: 0.2em 0 0 0; }
+  .section-divider { border-top: none; margin-top: 2.6em; margin-bottom: 1em; font-size: 0.95em; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: #111827; display: flex; align-items: center; gap: 14px; }
+  .section-divider::after { content: ""; flex: 1; height: 1px; background: linear-gradient(90deg, #c7d2fe, rgba(199,210,254,0)); }
+  .year-divider { border-top: none; margin: 1.6em 0 0.7em 0; font-family: 'Source Serif 4', Georgia, serif; font-size: 1.5em; font-weight: 700; color: #cbd5e1; letter-spacing: 0.02em; }
+  .pub-entry { gap: 22px; padding: 18px 20px; margin-bottom: 14px; border: 1px solid #edf0f5; border-radius: 14px; background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%); box-shadow: 0 1px 2px rgba(15,23,42,0.04), 0 6px 18px rgba(15,23,42,0.05); transition: box-shadow .25s ease, transform .25s ease, border-color .25s ease; }
+  .pub-entry:hover { border-color: #dbe3f4; box-shadow: 0 4px 10px rgba(15,23,42,0.06), 0 16px 34px rgba(30,64,175,0.10); transform: translateY(-2px); }
+  .pub-thumb { width: 230px; height: 140px; padding: 6px; border: 1px solid #eef1f6; box-shadow: none; background-color: #ffffff; border-radius: 10px; }
+  .pub-title { font-family: 'Source Serif 4', Georgia, serif; font-size: 1.06em; font-weight: 700; line-height: 1.35; margin: 8px 0 6px 0; color: #0f172a; }
+  .pub-title em { font-style: normal; }
+  .pub-title a, .pub-title a:visited { color: #0f172a; background-image: linear-gradient(#1d4ed8, #1d4ed8); background-size: 0 1.5px; background-position: 0 100%; background-repeat: no-repeat; transition: background-size .25s ease, color .25s ease; }
+  .pub-title a:hover { color: #1d4ed8; background-size: 100% 1.5px; }
+  .pub-meta { font-size: 0.86em; color: #475569; line-height: 1.5; }
+  .pub-meta strong { color: #0f172a; font-weight: 600; text-decoration: underline; text-decoration-color: #c7d2fe; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  .pub-venue { font-size: 0.84em; font-style: normal; color: #64748b; margin-top: 3px; }
+  .label { border-radius: 6px; padding: 2px 8px; font-size: 0.68em; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+  .worldmodel, .vision, .graph, .recommendation, .nlp { background-color: transparent !important; border: 1px solid currentColor; padding: 1px 8px; }
+  .worldmodel { color: #c2410c; } .vision { color: #2563eb; } .graph { color: #15803d; } .recommendation { color: #be185d; } .nlp { color: #6d28d9; }
+  .acc { display: inline-block; margin-left: 8px; padding: 1px 9px; border-radius: 999px; font-size: 0.9em; font-weight: 600; color: #1e40af; background: #eef2ff; border: 1px solid #e0e7ff; }
+  .pub-links { margin-top: 9px; }
+  .pub-btn, .pub-btn:visited { display: inline-block; padding: 3px 12px; border-radius: 999px; border: 1px solid #cbd5e1; font-size: 0.74em; font-weight: 600; letter-spacing: 0.04em; color: #334155; text-decoration: none; transition: all .2s ease; }
+  .pub-btn:hover { border-color: #1d4ed8; background: #1d4ed8; color: #fff; text-decoration: none; }
 </style>
 
 <!-- 🧪 UNDER REVIEW -->
@@ -268,6 +279,7 @@ author_profile: true
     <div class="pub-title"><a href="https://arxiv.org/abs/2601.04574"><em>FeedEval: Pedagogically Aligned Evaluation of LLM-Generated Essay Feedback.</em></a></div>
     <div class="pub-meta">Seongyeub Chu, <strong>Jongwoo Kim</strong>,   Mun Yi.</div>
     <div class="pub-venue">Association for Computational Linguistics (ACL Findings), 2026 <span class="acc">Findings acceptance rate 17.8%</span></div>
+    <div class="pub-links"><a class="pub-btn" href="https://arxiv.org/abs/2601.04574">Paper</a></div>
   </div>
 </div>
 
@@ -280,6 +292,7 @@ author_profile: true
     <div class="pub-title"><a href="https://openreview.net/forum?id=FmxRzlu0rT"><em>Learning Posterior Predictive Distributions for Node Classification from Synthetic Graph Priors.</em></a></div>
     <div class="pub-meta">Jeongwhan Choi†, <strong>Jongwoo Kim†</strong>, Woosung Kang, Noseong Park.</div>
     <div class="pub-venue">International Conference on Learning Representations (ICLR), 2026 <span class="acc">Acceptance rate 27.4%</span></div>
+    <div class="pub-links"><a class="pub-btn" href="https://openreview.net/forum?id=FmxRzlu0rT">Paper</a></div>
   </div>
 </div>
 
@@ -295,6 +308,7 @@ author_profile: true
     <div class="pub-title"><a href="https://arxiv.org/abs/2505.17982"><em>Few-Shot Learning from Gigapixel Images via Hierarchical Vision-Language Alignment and Modeling.</em></a></div>
     <div class="pub-meta">Bryan Wong†, <strong>Jongwoo Kim†</strong>, Huazhu Fu, Mun Yi.</div>
     <div class="pub-venue">Neural Information Processing Systems (NeurIPS), 2025 <span class="acc">Acceptance rate 24.5%</span></div>
+    <div class="pub-links"><a class="pub-btn" href="https://arxiv.org/abs/2505.17982">Paper</a></div>
   </div>
 </div>
 
@@ -306,6 +320,7 @@ author_profile: true
     <div class="pub-title"><a href="https://aclanthology.org/2025.findings-emnlp.874/"><em>Not All Options Are Created Equal: Textual Option Weighting for Token-Efficient LLM-Based Knowledge Tracing.</em></a></div>
     <div class="pub-meta"><strong>Jongwoo Kim†</strong>, Seongyeub Chu†, Bryan Wong, Mun Yi.</div>
     <div class="pub-venue">Empirical Methods in Natural Language Processing (EMNLP Findings), 2025</div>
+    <div class="pub-links"><a class="pub-btn" href="https://aclanthology.org/2025.findings-emnlp.874/">Paper</a></div>
   </div>
 </div>
 
@@ -317,6 +332,7 @@ author_profile: true
     <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3746252.3761099"><em>Leveraging Multi-facet Paths for Heterogeneous Graph Representation Learning.</em></a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Seongyeub Chu, Hyeongmin Park, Bryan Wong, Keejun Han, Mun Yi.</div>
     <div class="pub-venue">Conference on Information and Knowledge Management (CIKM, Oral), 2025 <span class="acc">Full-paper acceptance rate 27%</span></div>
+    <div class="pub-links"><a class="pub-btn" href="https://dl.acm.org/doi/10.1145/3746252.3761099">Paper</a></div>
   </div>
 </div>
 
@@ -328,6 +344,7 @@ author_profile: true
     <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3748636.3764182"><em>A Novel Evaluation Framework for 15-Minute City Using Satellite Imagery.</em></a></div>
     <div class="pub-meta">ChanJae Song†, Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Mun Yi.</div>
     <div class="pub-venue">ACM SIGSPATIAL, 2025</div>
+    <div class="pub-links"><a class="pub-btn" href="https://dl.acm.org/doi/10.1145/3748636.3764182">Paper</a></div>
   </div>
 </div>
 
@@ -340,6 +357,7 @@ author_profile: true
     <div class="pub-title"><a href="https://papers.miccai.org/miccai-2025/0707-Paper0875.html"><em>MicroMIL: Graph-Based Multiple Instance Learning for Context-Aware Diagnosis with Microscopic Images.</em></a></div>
     <div class="pub-meta"><strong>Jongwoo Kim†</strong>, Bryan Wong†, Huazhu Fu, Willmer Rafell Quiñones Robles, Mun Yi.</div>
     <div class="pub-venue">Medical Image Computing and Computer-Assisted Intervention (MICCAI), 2025</div>
+    <div class="pub-links"><a class="pub-btn" href="https://papers.miccai.org/miccai-2025/0707-Paper0875.html">Paper</a></div>
   </div>
 </div>
 
@@ -351,6 +369,7 @@ author_profile: true
     <div class="pub-title"><a href="https://aclanthology.org/2025.findings-naacl.322/"><em>Rationale Behind Essay Scores: Enhancing S-LLM's Multi-Trait Essay Scoring with Rationale Generated by LLMs.</em></a></div>
     <div class="pub-meta">Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Bryan Wong, Mun Yi.</div>
     <div class="pub-venue">North American Chapter of ACL (NAACL Findings), 2025 <span class="acc">Findings acceptance rate 15%</span></div>
+    <div class="pub-links"><a class="pub-btn" href="https://aclanthology.org/2025.findings-naacl.322/">Paper</a></div>
   </div>
 </div>
 
@@ -362,6 +381,7 @@ author_profile: true
     <div class="pub-title"><a href="https://dl.acm.org/doi/10.1145/3706598.3713181"><em>Think Together and Work Better: Combining Humans' and LLMs' Think-Aloud Outcomes for Effective Text Evaluation.</em></a></div>
     <div class="pub-meta">Seongyeub Chu†, <strong>Jongwoo Kim†</strong>, Mun Yi.</div>
     <div class="pub-venue">Conference on Human Factors in Computing Systems (CHI, Oral), 2025 <span class="acc">Acceptance rate 24.9%</span></div>
+    <div class="pub-links"><a class="pub-btn" href="https://dl.acm.org/doi/10.1145/3706598.3713181">Paper</a></div>
   </div>
 </div>
 
@@ -373,6 +393,7 @@ author_profile: true
     <div class="pub-title"><a href="https://openaccess.thecvf.com/content/WACV2025/html/Park_Uncertainty-Based_Data-Wise_Label_Smoothing_for_Calibrating_Multiple_Instance_Learning_in_WACV_2025_paper.html"><em>Uncertainty-based Data-wise Label Smoothing for Calibrating Multiple Instance Learning in Histopathology Image.</em></a></div>
     <div class="pub-meta">Hyeongmin Park, Sungrae Hong, Chanjae Song, <strong>Jongwoo Kim</strong>, Mun Yi.</div>
     <div class="pub-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV, Oral), 2025</div>
+    <div class="pub-links"><a class="pub-btn" href="https://openaccess.thecvf.com/content/WACV2025/html/Park_Uncertainty-Based_Data-Wise_Label_Smoothing_for_Calibrating_Multiple_Instance_Learning_in_WACV_2025_paper.html">Paper</a></div>
   </div>
 </div>
 
@@ -386,6 +407,7 @@ author_profile: true
     <div class="pub-title"><a href="https://ieeexplore.ieee.org/document/10635826"><em>Leveraging Spatial Relationships in Microscopic Images for Patient Cancer Diagnosis.</em></a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Minkyu Jeong, Hyeongmin Park, Young Sin Ko, Mun Yi.</div>
     <div class="pub-venue">IEEE International Symposium on Biomedical Imaging (ISBI), 2024</div>
+    <div class="pub-links"><a class="pub-btn" href="https://ieeexplore.ieee.org/document/10635826">Paper</a></div>
   </div>
 </div>
 
@@ -401,6 +423,7 @@ author_profile: true
     <div class="pub-title"><a href="https://www.sciencedirect.com/science/article/pii/S0040162523002998"><em>How to succeed in the market? Predicting startup success using a machine learning approach.</em></a></div>
     <div class="pub-meta"><strong>Jongwoo Kim</strong>, Hongil Kim, Youngjung Geum.</div>
     <div class="pub-venue">Technological Forecasting & Social Change (TFSC), 2023 <span class="acc">IF 13.3</span></div>
+    <div class="pub-links"><a class="pub-btn" href="https://www.sciencedirect.com/science/article/pii/S0040162523002998">Paper</a></div>
   </div>
 
  </div> 
@@ -415,6 +438,7 @@ author_profile: true
     <div class="pub-title"><a href="https://arxiv.org/abs/2602.05297"><em>AMR: Aspect-Aware MOOC Recommendation in a Heterogeneous Network.</em></a></div>
     <div class="pub-meta">Seongyeub Chu, <strong>Jongwoo Kim</strong>, Mun Yi.</div>
     <div class="pub-venue">Preprint, 2026</div>
+    <div class="pub-links"><a class="pub-btn" href="https://arxiv.org/abs/2602.05297">Paper</a></div>
   </div>
 </div>
 
@@ -426,6 +450,7 @@ author_profile: true
     <div class="pub-title"><a href="https://arxiv.org/abs/2512.08798"><em>Can TabPFN Compete with GNNs for Node Classification via Graph Tabularization?</em></a></div>
     <div class="pub-meta">Jeongwhan Choi, Woosung Kang, Minseo Kim, <strong>Jongwoo Kim</strong>, Noseong Park.</div>
     <div class="pub-venue">Preprint, 2025</div>
+    <div class="pub-links"><a class="pub-btn" href="https://arxiv.org/abs/2512.08798">Paper</a></div>
   </div>
 </div>
 
