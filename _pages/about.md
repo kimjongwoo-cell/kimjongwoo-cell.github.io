@@ -80,7 +80,7 @@ I’m always looking for practical challenges, regardless of domain.
   <div>
     <div class="sel-title"><a href="https://openreview.net/forum?id=FmxRzlu0rT">Learning Posterior Predictive Distributions for Node Classification from Synthetic Graph Priors.</a></div>
     <div class="sel-meta">Jeongwhan Choi†, <b>Jongwoo Kim†</b>, Woosung Kang, Noseong Park.</div>
-    <div class="sel-venue"><span class="venue-tag" style="background:#92400e;">ICLR</span>International Conference on Learning Representations (ICLR), 2026</div>
+    <div class="sel-venue"><span class="venue-tag" style="background:#b45309;">ICLR</span>International Conference on Learning Representations (ICLR), 2026</div>
   </div>
 </div>
 
@@ -89,7 +89,7 @@ I’m always looking for practical challenges, regardless of domain.
   <div>
     <div class="sel-title"><a href="https://arxiv.org/abs/2505.17982">Few-Shot Learning from Gigapixel Images via Hierarchical Vision-Language Alignment and Modeling.</a></div>
     <div class="sel-meta">Bryan Wong†, <b>Jongwoo Kim†</b>, Huazhu Fu, Mun Yi.</div>
-    <div class="sel-venue"><span class="venue-tag" style="background:#b45309;">NeurIPS</span>Neural Information Processing Systems (NeurIPS), 2025</div>
+    <div class="sel-venue"><span class="venue-tag" style="background:#b45309;">NeurIPS</span>Conference on Neural Information Processing Systems (NeurIPS), 2025</div>
   </div>
 </div>
 
@@ -98,7 +98,7 @@ I’m always looking for practical challenges, regardless of domain.
   <div>
     <div class="sel-title"><a href="https://dl.acm.org/doi/10.1145/3746252.3761099">Leveraging Multi-facet Paths for Heterogeneous Graph Representation Learning.</a></div>
     <div class="sel-meta"><b>Jongwoo Kim</b>, Seongyeub Chu, Hyeongmin Park, Bryan Wong, Keejun Han, Mun Yi.</div>
-    <div class="sel-venue"><span class="venue-tag" style="background:#0891b2;">CIKM Oral</span>Conference on Information and Knowledge Management (CIKM), 2025</div>
+    <div class="sel-venue"><span class="venue-tag" style="background:#1d4ed8;">CIKM · Oral</span>ACM International Conference on Information and Knowledge Management (CIKM), 2025, Oral</div>
   </div>
 </div>
 
