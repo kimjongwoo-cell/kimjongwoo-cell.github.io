@@ -1,0 +1,5 @@
+{% assign c = site.data.citations.works[include.id] %}{% if c and c.total > 0 %}{% assign top = 1 %}{% for y in c.years %}{% if y.n > top %}{% assign top = y.n %}{% endif %}{% endfor %}
+<div class="cite" title="Citations per year (OpenAlex, updated {{ site.data.citations.updated }})">
+  <span class="cite-total">Cited by {{ c.total }}</span>
+  <span class="cite-bars">{% for y in c.years %}<span class="cite-bar"><span class="cite-n">{{ y.n }}</span><span class="cite-fill" style="height:{{ y.n | times: 22 | divided_by: top }}px"></span><span class="cite-yr">'{{ y.year | append: '' | slice: 2, 2 }}</span></span>{% endfor %}</span>
+</div>{% endif %}
