@@ -35,6 +35,10 @@ redirect_from:
   .sel-venue { font-style: normal !important; }
   .venue-tag { border-radius: 6px !important; letter-spacing: 0.06em !important; text-transform: uppercase; }
 </style>
+{% include cite-style.html %}
+<style>
+  .sel-kw { margin: 2px 0 4px 0; } .sel-kw .kw { display: inline-block; border-radius: 6px; font-size: 0.66em; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-right: 5px; }
+</style>
 
 Hello, I’m Jongwoo Kim, a Ph.D. student in Industrial and Systems Engineering at KAIST, advised by [Prof. Mun Yong Yi](https://sites.google.com/view/myyi-kaist) and [Prof. Noseong Park](https://sites.google.com/view/npark). I work at the [Knowledge Innovation Research Center (KIRC)](https://kirc.kaist.ac.kr).
 
@@ -69,6 +73,7 @@ I’m always looking for practical challenges, regardless of domain.
 <div class="sel-pub">
   <img src="/images/grape.png" alt="GraPE">
   <div>
+    <div class="sel-kw"><span class="kw graph">Graph</span><span class="kw">Prompt Tuning</span></div>
     <div class="sel-title">GraPE: Graph Prompt Tuning via Mixture of Experts Approach.</div>
     <div class="sel-meta"><b>Jongwoo Kim</b>, Jeongwhan Choi, Seongyeub Chu, Noseong Park, Mun Yi.</div>
     <div class="sel-venue"><span class="venue-tag">KDD</span>ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2027</div>
@@ -78,27 +83,33 @@ I’m always looking for practical challenges, regardless of domain.
 <div class="sel-pub">
   <img src="/images/nodepfn.png" alt="NodePFN">
   <div>
+    <div class="sel-kw"><span class="kw graph">Graph</span><span class="kw">In-Context Learning</span></div>
     <div class="sel-title"><a href="https://openreview.net/forum?id=FmxRzlu0rT">Learning Posterior Predictive Distributions for Node Classification from Synthetic Graph Priors.</a></div>
     <div class="sel-meta">Jeongwhan Choi†, <b>Jongwoo Kim†</b>, Woosung Kang, Noseong Park.</div>
     <div class="sel-venue"><span class="venue-tag" style="background:#b45309;">ICLR</span>International Conference on Learning Representations (ICLR), 2026</div>
+    {% include cite.html id="W7155211147" %}
   </div>
 </div>
 
 <div class="sel-pub">
   <img src="/images/NeurIPS_2025.png" alt="NeurIPS 2025">
   <div>
+    <div class="sel-kw"><span class="kw vision">Pathology</span><span class="kw">Vision-Language</span></div>
     <div class="sel-title"><a href="https://arxiv.org/abs/2505.17982">Few-Shot Learning from Gigapixel Images via Hierarchical Vision-Language Alignment and Modeling.</a></div>
     <div class="sel-meta">Bryan Wong†, <b>Jongwoo Kim†</b>, Huazhu Fu, Mun Yi.</div>
     <div class="sel-venue"><span class="venue-tag" style="background:#b45309;">NeurIPS</span>Conference on Neural Information Processing Systems (NeurIPS), 2025</div>
+    {% include cite.html id="W4416045943" %}
   </div>
 </div>
 
 <div class="sel-pub">
   <img src="/images/CIKM_2025.png" alt="CIKM 2025">
   <div>
+    <div class="sel-kw"><span class="kw graph">Graph</span><span class="kw">Representation Learning</span></div>
     <div class="sel-title"><a href="https://dl.acm.org/doi/10.1145/3746252.3761099">Leveraging Multi-facet Paths for Heterogeneous Graph Representation Learning.</a></div>
     <div class="sel-meta"><b>Jongwoo Kim</b>, Seongyeub Chu, Hyeongmin Park, Bryan Wong, Keejun Han, Mun Yi.</div>
     <div class="sel-venue"><span class="venue-tag" style="background:#1d4ed8;">CIKM · Oral</span>ACM International Conference on Information and Knowledge Management (CIKM), 2025, Oral</div>
+    {% include cite.html id="W4416078523" %}
   </div>
 </div>
 
